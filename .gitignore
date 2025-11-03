@@ -1,0 +1,33 @@
+# Build
+bin/
+obj/
+
+# User
+*.user
+*.suo
+.vs/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+
+# Local appsettings with secrets
+appsettings.json
+
+# Rider/IDE
+.idea/
+
+# Publish
+*.publish
+
+# Dotnet user secrets (if used)
+secrets.json
+
+# ChromeDriver
+**/chromedriver*
+
+# Optional: Ignore local database files
+*.db
+
