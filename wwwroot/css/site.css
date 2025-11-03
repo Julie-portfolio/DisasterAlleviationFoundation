@@ -1,0 +1,31 @@
+.hero {
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.icon {
+    font-size: 28px;
+}
+
+    .icon.danger {
+        color: #dc3545;
+    }
+
+    .icon.success {
+        color: #198754;
+    }
+
+    .icon.info {
+        color: #0dcaf0;
+    }
+
+    .icon.warning {
+        color: #ffc107;
+    }
+
+.card {
+    border-radius: 12px;
+}
+
+.navbar-brand {
+    letter-spacing: .2px;
+}

@@ -1,0 +1,13 @@
+﻿namespace DisasterAlleviationApp.Services
+{
+    public static class DonationStatusRules
+    {
+        public static string InitialStatus() => "pending";
+
+        public static bool CanTransition(string from, string to)
+        {
+            if (from == "pending" && to == "distributed") return true;
+            return false;
+        }
+    }
+}

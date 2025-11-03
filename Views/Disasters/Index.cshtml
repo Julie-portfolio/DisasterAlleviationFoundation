@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DisasterAlleviationApp.Models.Disaster>
+@{
+    ViewData["Title"] = "Incidents";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Incidents</h2>
+    <a class="btn btn-primary" asp-action="Report">Report Incident</a>
+</div>
+
+<form method="get" class="row g-3 mb-3">
+    <div class="col-md-4">
+        <input class="form-control" name="location" placeholder="Filter by location" value="@Context.Request.Query["location"]" />
+    </div>
+    <div class="col-md-4">
+        <select class="form-select" name="severity">
+            <option value="">All severities</option>
+            @foreach (var s in new[] { "Low", "Medium", "High", "Critical" })
+            {
+                <option value="@s" selected="@(Context.Request.Query["severity"] == s)">@s</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-outline-primary" type="submit">Apply Filters</button>
+    </div>
+</form>
+
+<div class="row g-3">
+    @foreach (var d in Model)
+    {
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@d.Title</h5>
+                    <p class="card-text">@d.Description</p>
+                    <span class="badge bg-secondary me-2">@d.Location</span>
+                    <span class="badge bg-danger">@d.Severity</span>
+                    <div class="mt-2 text-muted">Occurred: @d.OccurredAt.ToLocalTime()</div>
+                    @if (!string.IsNullOrEmpty(d.EvidencePath))
+                    {
+                        <div class="mt-2"><a href="@d.EvidencePath" target="_blank">View evidence</a></div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

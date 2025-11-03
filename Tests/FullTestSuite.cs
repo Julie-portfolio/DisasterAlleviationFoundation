@@ -1,0 +1,295 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DisasterAlleviationApp.Services;
+using DisasterAlleviationApp.Models;
+using System.Collections.Generic;
+using System.Linq;
+using DisasterAlleviationApp.Controllers;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DisasterAlleviationApp.Tests
+{
+    [TestClass]
+    public class FullTestSuite
+    {
+        // DonationValidator tests
+        [TestMethod]
+        public void DonationValidator_ValidDonation_ReturnsTrue()
+        {
+            // Arrange
+            var validator = new DonationValidator();
+            var d = new Donation { Category = "Food", Quantity = 3, DonorEmail = "a@b.com" };
+
+            // Act
+            var ok = validator.IsValid(d);
+
+            // Assert
+            Assert.IsTrue(ok);
+        }
+
+        [TestMethod]
+        public void DonationValidator_InvalidQuantity_ReturnsFalse()
+        {
+            // Arrange
+            var validator = new DonationValidator();
+            var d = new Donation { Category = "Food", Quantity = 0 };
+
+            // Act
+            var ok = validator.IsValid(d);
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        [TestMethod]
+        public void DonationValidator_EmptyCategory_ReturnsFalse()
+        {
+            // Arrange
+            var validator = new DonationValidator();
+            var d = new Donation { Category = "", Quantity = 1 };
+
+            // Act
+            var ok = validator.IsValid(d);
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        [TestMethod]
+        public void DonationValidator_InvalidEmail_ReturnsFalse()
+        {
+            // Arrange
+            var validator = new DonationValidator();
+            var d = new Donation { Category = "Food", Quantity = 1, DonorEmail = "invalid" };
+
+            // Act
+            var ok = validator.IsValid(d);
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        // LoginValidator tests
+        [TestMethod]
+        public void LoginValidator_Valid_ReturnsTrue()
+        {
+            // Arrange
+            var v = new LoginValidator();
+
+            // Act
+            var ok = v.IsValid("user@example.com", "Password1");
+
+            // Assert
+            Assert.IsTrue(ok);
+        }
+
+        [TestMethod]
+        public void LoginValidator_EmptyUsername_ReturnsFalse()
+        {
+            // Arrange
+            var v = new LoginValidator();
+
+            // Act
+            var ok = v.IsValid("", "Password1");
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        [TestMethod]
+        public void LoginValidator_EmptyPassword_ReturnsFalse()
+        {
+            // Arrange
+            var v = new LoginValidator();
+
+            // Act
+            var ok = v.IsValid("user@example.com", "");
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        [TestMethod]
+        public void LoginValidator_ShortPassword_ReturnsFalse()
+        {
+            // Arrange
+            var v = new LoginValidator();
+
+            // Act
+            var ok = v.IsValid("user@example.com", "123");
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        // DonationStatusRules tests
+        [TestMethod]
+        public void DonationStatusRules_InitialStatus_IsPending()
+        {
+            // Arrange & Act
+            var s = DonationStatusRules.InitialStatus();
+
+            // Assert
+            Assert.AreEqual("pending", s);
+        }
+
+        [TestMethod]
+        public void DonationStatusRules_ValidTransition_ReturnsTrue()
+        {
+            // Arrange & Act
+            var ok = DonationStatusRules.CanTransition("pending", "distributed");
+
+            // Assert
+            Assert.IsTrue(ok);
+        }
+
+        [TestMethod]
+        public void DonationStatusRules_InvalidTransition_ReturnsFalse()
+        {
+            // Arrange & Act
+            var ok = DonationStatusRules.CanTransition("distributed", "pending");
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        // DonationCategoryRules tests
+        [TestMethod]
+        public void DonationCategoryRules_Allowed_ReturnsTrue()
+        {
+            // Arrange & Act
+            var ok = DonationCategoryRules.IsAllowed("food");
+
+            // Assert
+            Assert.IsTrue(ok);
+        }
+
+        [TestMethod]
+        public void DonationCategoryRules_Disallowed_ReturnsFalse()
+        {
+            // Arrange & Act
+            var ok = DonationCategoryRules.IsAllowed("electronics");
+
+            // Assert
+            Assert.IsFalse(ok);
+        }
+
+        [TestMethod]
+        public void DonationCategoryRules_CaseInsensitive_ReturnsTrue()
+        {
+            // Arrange & Act
+            var ok = DonationCategoryRules.IsAllowed("ClOtHiNg");
+
+            // Assert
+            Assert.IsTrue(ok);
+        }
+
+        // DonationSummaryService tests
+        [TestMethod]
+        public void DonationSummaryService_Aggregation_Works()
+        {
+            // Arrange
+            var svc = new DonationSummaryService();
+            var list = new[] {
+                new Donation { Category = "Food", Quantity = 2 },
+                new Donation { Category = "food", Quantity = 3 },
+                new Donation { Category = "Clothing", Quantity = 5 }
+            };
+
+            // Act
+            var summary = svc.SummarizeByCategory(list);
+
+            // Assert
+            Assert.AreEqual(2, summary.Count);
+            Assert.IsTrue(summary.ContainsKey("food"));
+            Assert.AreEqual(5, summary["food"]);
+            Assert.AreEqual(5, summary["clothing"]);
+        }
+
+        [TestMethod]
+        public void DonationSummaryService_EmptyInput_ReturnsEmpty()
+        {
+            // Arrange
+            var svc = new DonationSummaryService();
+
+            // Act
+            var summary = svc.SummarizeByCategory(new Donation[0]);
+
+            // Assert
+            Assert.IsNotNull(summary);
+            Assert.AreEqual(0, summary.Count);
+        }
+
+        // DonationsControllerLite tests
+        [TestMethod]
+        public void DonationsControllerLite_Create_Valid_RedirectsAndPersists()
+        {
+            // Arrange
+            var repo = new FakeDonationRepository();
+            var ctrl = new DonationsControllerLite(repo);
+            var model = new Donation { Category = "Food", Quantity = 4 };
+
+            // Act
+            var result = ctrl.Create(model);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var r = (RedirectToActionResult)result;
+            Assert.AreEqual("Index", r.ActionName);
+            var saved = repo.GetAll().FirstOrDefault();
+            Assert.IsNotNull(saved);
+            Assert.AreEqual("pending", saved!.Status);
+        }
+
+        [TestMethod]
+        public void DonationsControllerLite_Create_Invalid_ReturnsView()
+        {
+            // Arrange
+            var repo = new FakeDonationRepository();
+            var ctrl = new DonationsControllerLite(repo);
+            var model = new Donation { Category = "", Quantity = 0 };
+
+            // Act
+            var result = ctrl.Create(model);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(ViewResult));
+            var v = (ViewResult)result;
+            Assert.AreSame(model, v.Model);
+        }
+
+        [TestMethod]
+        public void DonationsControllerLite_MarkDistributed_Success()
+        {
+            // Arrange
+            var repo = new FakeDonationRepository();
+            var donation = new Donation { Id = 2, Category = "Money", Quantity = 1, Status = "pending" };
+            repo.Add(donation);
+            var ctrl = new DonationsControllerLite(repo);
+
+            // Act
+            var result = ctrl.MarkDistributed(2);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var r = (RedirectToActionResult)result;
+            Assert.AreEqual("Manage", r.ActionName);
+            var saved = repo.GetById(2);
+            Assert.IsNotNull(saved);
+            Assert.AreEqual("distributed", saved!.Status);
+        }
+
+        [TestMethod]
+        public void DonationsControllerLite_MarkDistributed_NotFound()
+        {
+            // Arrange
+            var repo = new FakeDonationRepository();
+            var ctrl = new DonationsControllerLite(repo);
+
+            // Act
+            var result = ctrl.MarkDistributed(999);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+        }
+    }
+}

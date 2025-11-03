@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<div class="p-5 mb-4 bg-light rounded-3 hero">
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold">Disaster Alleviation Foundation</h1>
+        <p class="col-md-8 fs-5">Manage disasters, donations, and volunteers all in one place.</p>
+        <div class="mt-3">
+            <a class="btn btn-primary me-2" asp-controller="Donations" asp-action="Create">Donate Resources</a>
+            <a class="btn btn-outline-primary" asp-controller="Disasters" asp-action="Report">Report Disaster</a>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="icon danger mb-2">⚠️</div>
+                <h5 class="card-title">Disaster Reporting</h5>
+                <p class="card-text">Report and track disaster incidents in real-time.</p>
+                <a class="btn btn-outline-danger" asp-controller="Disasters" asp-action="Index">View Incidents</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="icon success mb-2">🎁</div>
+                <h5 class="card-title">Resource Donation</h5>
+                <p class="card-text">Contribute resources to support relief efforts.</p>
+                <a class="btn btn-outline-success" asp-controller="Donations" asp-action="Create">Donate</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="icon info mb-2">🧑‍🤝‍🧑</div>
+                <h5 class="card-title">Volunteer Management</h5>
+                <p class="card-text">Assign and manage volunteers to incidents.</p>
+                <a class="btn btn-outline-info" asp-controller="Volunteer" asp-action="Index">Manage Volunteers</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="icon warning mb-2">👤</div>
+                <h5 class="card-title">User Management</h5>
+                <p class="card-text">Profile and account management for registered users.</p>
+                <a class="btn btn-outline-warning" asp-area="Identity" asp-page="/Account/Register">Login / Register</a>
+            </div>
+        </div>
+    </div>
+</div>

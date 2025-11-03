@@ -1,0 +1,255 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Threading;
+
+namespace DisasterAlleviationApp.Tests
+{
+    [TestClass]
+    public class SeleniumUITests
+    {
+        private static Process? _appProcess;
+        private static string _baseUrl = Environment.GetEnvironmentVariable("DISASTER_APP_URL") ?? "http://localhost:5005";
+        private IWebDriver? _driver;
+
+        [ClassInitialize]
+        public static void ClassInit(TestContext context)
+        {
+            // If DISASTER_APP_URL indicates the app is already running (set DISASTER_APP_RUNNING=true), skip starting.
+            var alreadyRunning = Environment.GetEnvironmentVariable("DISASTER_APP_RUNNING");
+            if (string.Equals(alreadyRunning, "true", StringComparison.OrdinalIgnoreCase))
+            {
+                return;
+            }
+
+            // Find solution root by walking up from current directory
+            var solutionRoot = FindSolutionRoot();
+            if (solutionRoot == null)
+                throw new InvalidOperationException("Could not find solution root to run the web app.");
+
+            var projectPath = Path.Combine(solutionRoot, "DisasterAlleviationApp");
+            var psi = new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                Arguments = $"run --project \"{projectPath}\" --urls {_baseUrl}",
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            _appProcess = Process.Start(psi);
+            if (_appProcess == null)
+                throw new InvalidOperationException("Failed to start the web application process.");
+
+            // Optional: capture output asynchronously (helpful for debugging)
+            _appProcess.OutputDataReceived += (s, e) => { if (e.Data != null) Debug.WriteLine(e.Data); };
+            _appProcess.BeginOutputReadLine();
+            _appProcess.BeginErrorReadLine();
+
+            // Wait until the application responds on the base URL
+            var http = new HttpClient();
+            var timeout = TimeSpan.FromSeconds(30);
+            var sw = Stopwatch.StartNew();
+            while (sw.Elapsed < timeout)
+            {
+                try
+                {
+                    var resp = http.GetAsync(_baseUrl).GetAwaiter().GetResult();
+                    if (resp.IsSuccessStatusCode) return;
+                }
+                catch
+                {
+                    // ignore
+                }
+                Thread.Sleep(500);
+            }
+
+            // If here, app did not start in time
+            throw new InvalidOperationException($"Web app did not start within {timeout.TotalSeconds} seconds at {_baseUrl}.");
+        }
+
+        [ClassCleanup]
+        public static void ClassCleanup()
+        {
+            try
+            {
+                if (_appProcess != null && !_appProcess.HasExited)
+                {
+                    _appProcess.Kill(true);
+                    _appProcess.WaitForExit(3000);
+                }
+            }
+            catch { /* ignore */ }
+        }
+
+        [TestInitialize]
+        public void TestInit()
+        {
+            var service = ChromeDriverService.CreateDefaultService();
+            service.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            // run headless by default for CI; remove if you want to see the browser
+            options.AddArgument("--headless=new");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+
+            _driver = new ChromeDriver(service, options);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        }
+
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            try { _driver?.Quit(); } catch { }
+            try { _driver?.Dispose(); } catch { }
+        }
+
+        [TestMethod]
+        public void CreateDonation_ValidInput_RedirectsToIndex()
+        {
+            // Arrange
+            var driver = _driver!;
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            // Act
+            driver.Navigate().GoToUrl(new Uri(new Uri(_baseUrl), "/Donations/Create"));
+
+            // select category
+            var selectElem = driver.FindElement(By.Name("Category"));
+            var select = new OpenQA.Selenium.Support.UI.SelectElement(selectElem);
+            select.SelectByText("Food");
+
+            // set quantity
+            var qty = driver.FindElement(By.Name("Quantity"));
+            qty.Clear();
+            qty.SendKeys("5");
+
+            // submit
+            var submit = driver.FindElements(By.CssSelector("button[type='submit'], button.btn-primary")).FirstOrDefault();
+            Assert.IsNotNull(submit, "Submit button not found");
+            submit!.Click();
+
+            // Assert - wait for Index heading
+            wait.Until(d => d.FindElement(By.XPath("//h2[contains(., 'Donations')]")));
+            var h2 = driver.FindElement(By.XPath("//h2[contains(., 'Donations')]") );
+            Assert.IsTrue(h2.Displayed);
+            Assert.IsTrue(driver.Url.Contains("/Donations"));
+        }
+
+        [TestMethod]
+        public void CreateDonation_InvalidInput_ShowsValidationError()
+        {
+            // Arrange
+            var driver = _driver!;
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            // Act
+            driver.Navigate().GoToUrl(new Uri(new Uri(_baseUrl), "/Donations/Create"));
+
+            // Clear category via JS and set quantity to 0 and bypass client validation
+            var js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("var f = document.forms[0]; f.setAttribute('novalidate','novalidate');");
+            js.ExecuteScript("document.getElementsByName('Category')[0].value = ''; document.getElementsByName('Quantity')[0].value = '0';");
+            js.ExecuteScript("document.forms[0].submit();");
+
+            // Assert - validation message for Category should be visible
+            wait.Until(d => d.FindElement(By.CssSelector("span[data-valmsg-for='Category']")));
+            var msg = driver.FindElement(By.CssSelector("span[data-valmsg-for='Category']"));
+            Assert.IsTrue(!string.IsNullOrWhiteSpace(msg.Text), "Expected validation message for Category");
+
+            // Also ensure we're still on Create URL
+            Assert.IsTrue(driver.Url.Contains("/Donations/Create"));
+        }
+
+        [TestMethod]
+        public void Login_ValidCredentials_RedirectsToDashboard()
+        {
+            // Arrange
+            var driver = _driver!;
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            driver.Navigate().GoToUrl(new Uri(new Uri(_baseUrl), "/Identity/Account/Login"));
+
+            // Try common selectors for email and password fields
+            IWebElement emailInput = null!;
+            IWebElement pwInput = null!;
+            var candidates = driver.FindElements(By.CssSelector("input[type='email'], input[name='Input.Email'], input[id$='Email']"));
+            emailInput = candidates.FirstOrDefault();
+            var pwCandidates = driver.FindElements(By.CssSelector("input[type='password'], input[name='Input.Password'], input[id$='Password']"));
+            pwInput = pwCandidates.FirstOrDefault();
+
+            Assert.IsNotNull(emailInput, "Email input not found on login page");
+            Assert.IsNotNull(pwInput, "Password input not found on login page");
+
+            // Use seeded admin credentials
+            emailInput.Clear();
+            emailInput.SendKeys("admin@disaster.com");
+            pwInput.Clear();
+            pwInput.SendKeys("Admin#1234");
+
+            var submit = driver.FindElements(By.CssSelector("button[type='submit'], button.btn-primary")).FirstOrDefault();
+            Assert.IsNotNull(submit);
+            submit!.Click();
+
+            // Assert - wait for presence of a log out link or for URL to change
+            wait.Until(d => d.FindElements(By.XPath("//a[contains(., 'Log out') or contains(., 'Logout') or contains(., 'Sign out')]")).Any());
+            var logout = driver.FindElements(By.XPath("//a[contains(., 'Log out') or contains(., 'Logout') or contains(., 'Sign out')]")).FirstOrDefault();
+            Assert.IsNotNull(logout, "Expected to see a log out link after successful login");
+        }
+
+        [TestMethod]
+        public void Login_InvalidCredentials_ShowsErrorMessage()
+        {
+            // Arrange
+            var driver = _driver!;
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            driver.Navigate().GoToUrl(new Uri(new Uri(_baseUrl), "/Identity/Account/Login"));
+
+            IWebElement emailInput = null!;
+            IWebElement pwInput = null!;
+            var candidates = driver.FindElements(By.CssSelector("input[type='email'], input[name='Input.Email'], input[id$='Email']"));
+            emailInput = candidates.FirstOrDefault();
+            var pwCandidates = driver.FindElements(By.CssSelector("input[type='password'], input[name='Input.Password'], input[id$='Password']"));
+            pwInput = pwCandidates.FirstOrDefault();
+
+            Assert.IsNotNull(emailInput, "Email input not found on login page");
+            Assert.IsNotNull(pwInput, "Password input not found on login page");
+
+            emailInput.Clear();
+            emailInput.SendKeys("nonexistent@example.com");
+            pwInput.Clear();
+            pwInput.SendKeys("WrongPassword1!");
+
+            var submit = driver.FindElements(By.CssSelector("button[type='submit'], button.btn-primary")).FirstOrDefault();
+            Assert.IsNotNull(submit);
+            submit!.Click();
+
+            // Assert - validation summary should display an error message
+            wait.Until(d => d.FindElements(By.CssSelector("div.validation-summary-errors, div.text-danger, div.alert-danger")).Any());
+            var summary = driver.FindElements(By.CssSelector("div.validation-summary-errors, div.text-danger, div.alert-danger")).FirstOrDefault();
+            Assert.IsNotNull(summary);
+            Assert.IsTrue(summary!.Text.Contains("Invalid login attempt", StringComparison.OrdinalIgnoreCase) || summary.Text.Length > 0, "Expected an invalid login message");
+        }
+
+        private static string? FindSolutionRoot()
+        {
+            var dir = AppContext.BaseDirectory;
+            var di = new DirectoryInfo(dir);
+            while (di != null)
+            {
+                var sln = di.GetFiles("*.sln").FirstOrDefault();
+                if (sln != null) return di.FullName;
+                di = di.Parent;
+            }
+            return null;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+﻿@model DisasterAlleviationApp.Models.TaskAssignment
+@{
+    ViewData["Title"] = "Assign Task";
+}
+<h2>Assign Task</h2>
+
+<form asp-action="AssignTask" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="VolunteerId" />
+    <div class="mb-3">
+        <label asp-for="TaskName" class="form-label"></label>
+        <input asp-for="TaskName" class="form-control" />
+        <span asp-validation-for="TaskName" class="text-danger"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Assign</button>
+    <a asp-action="Index" class="btn btn-secondary ms-2">Back</a>
+</form>
+
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

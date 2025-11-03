@@ -1,0 +1,31 @@
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace DisasterAlleviationApp.Data
+{
+    public static class SeedData
+    {
+        public static async Task SeedRolesAsync(IServiceProvider serviceProvider)
+        {
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+            string[] roles = { "Admin", "Volunteer", "Donor", "Coordinator" };
+
+            // Create roles if they don't exist
+            foreach (var role in roles)
+            {
+                if (!await roleManager.RoleExistsAsync(role))
+                {
+                    await roleManager.CreateAsync(new IdentityRole(role));
+                }
+            }
+
+            // OPTIONAL: Assign a role to a default user
+            var defaultUser = await userManager.FindByEmailAsync("admin@disaster.com");
+            if (defaultUser != null && !await userManager.IsInRoleAsync(defaultUser, "Admin"))
+            {
+                await userManager.AddToRoleAsync(defaultUser, "Admin");
+            }
+        }
+    }
+}

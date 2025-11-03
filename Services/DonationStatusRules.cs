@@ -1,0 +1,28 @@
+using System;
+
+namespace DisasterAlleviationApp.Services
+{
+    public static class DonationStatusRules
+    {
+        public static string InitialStatus() => "pending";
+
+        public static bool CanTransition(string from, string to)
+        {
+            if (string.Equals(from, "pending", StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(to, "distributed", StringComparison.OrdinalIgnoreCase))
+                return true;
+
+            if (string.Equals(from, "approved", StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(to, "distributed", StringComparison.OrdinalIgnoreCase))
+                return true;
+
+            return false;
+        }
+
+        public static void EnsureCanTransition(string from, string to)
+        {
+            if (!CanTransition(from, to))
+                throw new InvalidOperationException($"Cannot transition donation from '{from}' to '{to}'.");
+        }
+    }
+}

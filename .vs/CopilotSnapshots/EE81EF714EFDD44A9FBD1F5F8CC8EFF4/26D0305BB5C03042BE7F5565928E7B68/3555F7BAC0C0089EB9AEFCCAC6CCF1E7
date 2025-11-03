@@ -1,0 +1,168 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.Sqlite;
+using DisasterAlleviationApp.Models;
+using DisasterAlleviationApp.Controllers;
+using DisasterAlleviationApp.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+
+namespace DisasterAlleviationApp.Tests
+{
+    [TestClass]
+    public class DonationsControllerLiteIntegrationTests
+    {
+        [TestMethod]
+        public void Create_ValidDonation_SavesAndRedirectsToIndex()
+        {
+            // Arrange
+            using var conn = new SqliteConnection("DataSource=:memory:");
+            conn.Open();
+            var options = new DbContextOptionsBuilder<TestDbContext>()
+                .UseSqlite(conn)
+                .Options;
+
+            using var context = new TestDbContext(options);
+            context.Database.EnsureCreated();
+
+            var repo = new EfDonationRepository(context);
+            var controller = new DonationsControllerLite(repo);
+
+            var model = new Donation { Category = "Food", Quantity = 5 };
+
+            // Act
+            var result = controller.Create(model);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var redirect = (RedirectToActionResult)result;
+            Assert.AreEqual("Index", redirect.ActionName);
+
+            var saved = context.Donations.FirstOrDefault();
+            Assert.IsNotNull(saved);
+            Assert.AreEqual("pending", saved!.Status);
+            Assert.AreEqual(5, saved.Quantity);
+            Assert.AreEqual("Food", saved.Category);
+        }
+
+        [TestMethod]
+        public void Create_InvalidDonation_DoesNotSaveAndReturnsView()
+        {
+            // Arrange
+            using var conn = new SqliteConnection("DataSource=:memory:");
+            conn.Open();
+            var options = new DbContextOptionsBuilder<TestDbContext>()
+                .UseSqlite(conn)
+                .Options;
+
+            using var context = new TestDbContext(options);
+            context.Database.EnsureCreated();
+
+            var repo = new EfDonationRepository(context);
+            var controller = new DonationsControllerLite(repo);
+
+            // Quantity zero
+            var invalid1 = new Donation { Category = "Food", Quantity = 0 };
+
+            // Act
+            var r1 = controller.Create(invalid1);
+
+            // Assert
+            Assert.IsInstanceOfType(r1, typeof(ViewResult));
+            Assert.AreEqual(0, context.Donations.Count());
+
+            // Empty category
+            var invalid2 = new Donation { Category = "", Quantity = 3 };
+            var r2 = controller.Create(invalid2);
+            Assert.IsInstanceOfType(r2, typeof(ViewResult));
+            Assert.AreEqual(0, context.Donations.Count());
+        }
+
+        [TestMethod]
+        public void MarkDistributed_ExistingDonation_UpdatesStatusAndRedirectsToManage()
+        {
+            // Arrange
+            using var conn = new SqliteConnection("DataSource=:memory:");
+            conn.Open();
+            var options = new DbContextOptionsBuilder<TestDbContext>()
+                .UseSqlite(conn)
+                .Options;
+
+            using var context = new TestDbContext(options);
+            context.Database.EnsureCreated();
+
+            var repo = new EfDonationRepository(context);
+
+            var donation = new Donation { Category = "Clothing", Quantity = 2, Status = "pending" };
+            repo.Add(donation);
+
+            var controller = new DonationsControllerLite(repo);
+
+            // Act
+            var result = controller.MarkDistributed(donation.Id);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var r = (RedirectToActionResult)result;
+            Assert.AreEqual("Manage", r.ActionName);
+
+            var saved = context.Donations.Find(donation.Id);
+            Assert.IsNotNull(saved);
+            Assert.AreEqual("distributed", saved!.Status);
+        }
+
+        [TestMethod]
+        public void MarkDistributed_NonExistingDonation_ReturnsNotFound()
+        {
+            // Arrange
+            using var conn = new SqliteConnection("DataSource=:memory:");
+            conn.Open();
+            var options = new DbContextOptionsBuilder<TestDbContext>()
+                .UseSqlite(conn)
+                .Options;
+
+            using var context = new TestDbContext(options);
+            context.Database.EnsureCreated();
+
+            var repo = new EfDonationRepository(context);
+            var controller = new DonationsControllerLite(repo);
+
+            // Act
+            var result = controller.MarkDistributed(999);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+        }
+
+        // Simple EF Core test DbContext used only by tests
+        public class TestDbContext : DbContext
+        {
+            public TestDbContext(DbContextOptions<TestDbContext> options) : base(options) { }
+            public DbSet<Donation> Donations { get; set; } = null!;
+        }
+
+        // Repository implementation over EF Core used by controller
+        public class EfDonationRepository : IDonationRepository
+        {
+            private readonly TestDbContext _ctx;
+            public EfDonationRepository(TestDbContext ctx) => _ctx = ctx;
+
+            public void Add(Donation donation)
+            {
+                donation.CreatedAt = System.DateTime.UtcNow;
+                _ctx.Donations.Add(donation);
+                _ctx.SaveChanges();
+            }
+
+            public Donation? GetById(int id) => _ctx.Donations.Find(id);
+
+            public System.Collections.Generic.IEnumerable<Donation> GetAll() => _ctx.Donations.AsNoTracking().ToList();
+
+            public void Update(Donation donation)
+            {
+                _ctx.Donations.Update(donation);
+                _ctx.SaveChanges();
+            }
+        }
+    }
+}

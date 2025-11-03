@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DisasterAlleviationApp.Models.Donation>
+@{
+    ViewData["Title"] = "Donations";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Donations</h2>
+    <a class="btn btn-primary" asp-action="Create">Submit Donation</a>
+</div>
+
+<table class="table table-hover">
+    <thead><tr><th>Category</th><th>Quantity</th><th>Donor</th><th>Status</th><th>Date</th></tr></thead>
+    <tbody>
+        @foreach (var d in Model)
+        {
+            <tr>
+                <td>@d.Category</td>
+                <td>@d.Quantity</td>
+                <td>@(d.DonorName ?? "-")</td>
+                <td><span class="badge @(d.Status == "distributed" ? "bg-success" : "bg-warning text-dark")">@d.Status</span></td>
+                <td>@d.CreatedAt.ToLocalTime()</td>
+            </tr>
+        }
+    </tbody>
+</table>

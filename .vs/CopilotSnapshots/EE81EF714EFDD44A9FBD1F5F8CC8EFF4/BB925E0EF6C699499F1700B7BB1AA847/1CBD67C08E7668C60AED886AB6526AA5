@@ -1,0 +1,44 @@
+﻿@model DisasterAlleviationApp.Models.Disaster
+@{
+    ViewData["Title"] = "Report Incident";
+}
+<h2>Report Disaster</h2>
+<form asp-action="Report" method="post" enctype="multipart/form-data" class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Location</label>
+        <input asp-for="Location" class="form-control" />
+    </div>
+    <div class="col-12">
+        <label class="form-label">Description</label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Date/Time</label>
+        <input asp-for="OccurredAt" type="datetime-local" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Severity</label>
+        <select asp-for="Severity" class="form-select">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            <option>Critical</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Evidence (image/pdf)</label>
+        <input type="file" name="evidence" class="form-control" />
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary">Submit</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7a4fe3c8-3338-4186-963a-690ab721be08" name="User@LAPTOP-NLHHVF6D 2025-11-03 20:24:48" runUser="LAPTOP-NLHHVF6D\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-11-03T20:24:48.1230677+02:00" queuing="2025-11-03T20:24:48.1230683+02:00" start="2025-11-03T20:24:42.3696615+02:00" finish="2025-11-03T20:24:48.6824226+02:00" />
+  <TestSettings name="default" id="5589c486-fab4-4d84-b5a6-b8f5eefb28d6">
+    <Deployment runDeploymentRoot="User_LAPTOP-NLHHVF6D_2025-11-03_20_24_48" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="14dd1893-56f2-4e7f-a8f8-70552c2fdd69" testId="abf45545-7a9b-4ea0-6346-9c3a13965d6e" testName="DonationSummaryService_Aggregation_Works" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0115169" startTime="2025-11-03T20:24:48.4660755+02:00" endTime="2025-11-03T20:24:48.4778682+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14dd1893-56f2-4e7f-a8f8-70552c2fdd69" />
+    <UnitTestResult executionId="0a1070cc-7fd5-4903-b432-8c5b86bf11d3" testId="7d3be0d8-a8f3-2d70-54c3-928fca788f2f" testName="DonationCategoryRules_Allowed_ReturnsTrue" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0006245" startTime="2025-11-03T20:24:48.4638666+02:00" endTime="2025-11-03T20:24:48.4651079+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a1070cc-7fd5-4903-b432-8c5b86bf11d3" />
+    <UnitTestResult executionId="86b58dc8-8da2-4ee9-a0ab-b44f9b16ff68" testId="16d3f497-8396-ff55-484d-086cce706075" testName="DonationValidator_EmptyCategory_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001460" startTime="2025-11-03T20:24:48.4523267+02:00" endTime="2025-11-03T20:24:48.4526469+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86b58dc8-8da2-4ee9-a0ab-b44f9b16ff68" />
+    <UnitTestResult executionId="0ebe9e66-19ee-4234-b27d-6d1c59883af6" testId="03312a94-4003-4da9-a740-cfb6786eeb04" testName="Create_ValidDonation_SavesAndRedirectsToIndex" computerName="LAPTOP-NLHHVF6D" duration="00:00:03.7934792" startTime="2025-11-03T20:24:44.2189730+02:00" endTime="2025-11-03T20:24:48.0507716+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ebe9e66-19ee-4234-b27d-6d1c59883af6" />
+    <UnitTestResult executionId="053764be-4c71-4996-bbbb-808acfd4a733" testId="80fdabc2-4ec2-3dd3-350e-993f89b3f584" testName="DonationValidator_ValidDonation_ReturnsTrue" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0031748" startTime="2025-11-03T20:24:48.4476224+02:00" endTime="2025-11-03T20:24:48.4514579+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="053764be-4c71-4996-bbbb-808acfd4a733" />
+    <UnitTestResult executionId="6f2f1494-f514-42a9-b131-4a5db15f0f47" testId="e4695502-d030-c293-fd99-434ccce0a1e8" testName="MarkDistributed_NonExistingDonation_ReturnsNotFound" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0910672" startTime="2025-11-03T20:24:48.3554827+02:00" endTime="2025-11-03T20:24:48.4472267+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f2f1494-f514-42a9-b131-4a5db15f0f47" />
+    <UnitTestResult executionId="93a58518-8fea-4e7f-960f-90be7b3fb579" testId="da62925a-ed8c-8794-3a15-773fae7522f4" testName="DonationsControllerLite_Create_Invalid_ReturnsView" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0010147" startTime="2025-11-03T20:24:48.4825541+02:00" endTime="2025-11-03T20:24:48.4838088+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93a58518-8fea-4e7f-960f-90be7b3fb579" />
+    <UnitTestResult executionId="f889fe0a-98f8-4bdf-9ac6-f971ef33eda0" testId="e9c34923-6a60-492a-53e5-43b3038c8a72" testName="DonationsControllerLite_MarkDistributed_Success" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0012269" startTime="2025-11-03T20:24:48.4838984+02:00" endTime="2025-11-03T20:24:48.4863583+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f889fe0a-98f8-4bdf-9ac6-f971ef33eda0" />
+    <UnitTestResult executionId="56c342a2-371c-4f19-ab5c-084056b64d3a" testId="bb38eaff-449f-0e02-a226-2e5bd57d6f05" testName="MarkDistributed_ExistingDonation_UpdatesStatusAndRedirectsToManage" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.1215600" startTime="2025-11-03T20:24:48.2333044+02:00" endTime="2025-11-03T20:24:48.3551487+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56c342a2-371c-4f19-ab5c-084056b64d3a" />
+    <UnitTestResult executionId="914a7b72-4c27-4311-8983-fbcc94f51dbc" testId="cb56a343-195b-c3c2-f09f-c2696ab44bc9" testName="LoginValidator_EmptyUsername_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001182" startTime="2025-11-03T20:24:48.4537764+02:00" endTime="2025-11-03T20:24:48.4540704+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="914a7b72-4c27-4311-8983-fbcc94f51dbc" />
+    <UnitTestResult executionId="85c01784-1fa5-4ac8-ad4c-f220e000d682" testId="ff52aa98-a51b-49f6-478b-cda01144fd4d" testName="DonationsControllerLite_Create_Valid_RedirectsAndPersists" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0013289" startTime="2025-11-03T20:24:48.4809198+02:00" endTime="2025-11-03T20:24:48.4824641+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85c01784-1fa5-4ac8-ad4c-f220e000d682" />
+    <UnitTestResult executionId="f14893e0-3244-469f-acd7-814b1e42c4e9" testId="90b5d8b9-9f57-1237-39fb-9c6a65b9a741" testName="DonationStatusRules_ValidTransition_ReturnsTrue" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0003219" startTime="2025-11-03T20:24:48.4627786+02:00" endTime="2025-11-03T20:24:48.4634140+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f14893e0-3244-469f-acd7-814b1e42c4e9" />
+    <UnitTestResult executionId="9f31a45c-0ef6-4fba-9447-1390fcf8d674" testId="270257ec-1d71-05ac-d2d6-f9112a731eec" testName="DonationStatusRules_InitialStatus_IsPending" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0002210" startTime="2025-11-03T20:24:48.4622820+02:00" endTime="2025-11-03T20:24:48.4627156+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f31a45c-0ef6-4fba-9447-1390fcf8d674" />
+    <UnitTestResult executionId="d8092a75-87bd-475a-ad22-a14e1b2f5f33" testId="4bc2ef3c-5cd4-bfee-d01c-b2c128a92786" testName="DonationStatusRules_InvalidTransition_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001214" startTime="2025-11-03T20:24:48.4634854+02:00" endTime="2025-11-03T20:24:48.4637937+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8092a75-87bd-475a-ad22-a14e1b2f5f33" />
+    <UnitTestResult executionId="010fc5cc-5cc8-402b-86cb-e2933a78e2b7" testId="d936a1ba-5bdc-4d5b-eb67-5d11f1712384" testName="DonationValidator_InvalidQuantity_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0004376" startTime="2025-11-03T20:24:48.4515858+02:00" endTime="2025-11-03T20:24:48.4522511+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="010fc5cc-5cc8-402b-86cb-e2933a78e2b7" />
+    <UnitTestResult executionId="67a631b4-c938-4bd3-9c9f-5230f038d366" testId="017c0b3b-67bf-66a1-3ad8-fdb052185acf" testName="Create_InvalidDonation_DoesNotSaveAndReturnsView" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.1507045" startTime="2025-11-03T20:24:48.0814863+02:00" endTime="2025-11-03T20:24:48.2327360+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67a631b4-c938-4bd3-9c9f-5230f038d366" />
+    <UnitTestResult executionId="410278fa-376d-4d61-ae4d-9f8811f8ecce" testId="21dba62d-521b-a3a4-9834-279f732e4a6b" testName="DonationValidator_InvalidEmail_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001874" startTime="2025-11-03T20:24:48.4527071+02:00" endTime="2025-11-03T20:24:48.4531920+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="410278fa-376d-4d61-ae4d-9f8811f8ecce" />
+    <UnitTestResult executionId="d46c9138-f239-46d8-80a1-bc74d0998562" testId="e1595e0a-f62d-9e41-22f6-25d219aa22bc" testName="DonationCategoryRules_CaseInsensitive_ReturnsTrue" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001220" startTime="2025-11-03T20:24:48.4656478+02:00" endTime="2025-11-03T20:24:48.4660144+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d46c9138-f239-46d8-80a1-bc74d0998562" />
+    <UnitTestResult executionId="c1334ef9-b1a0-456a-a3eb-830c843d18f4" testId="fd69289c-59b8-2113-5fff-22815c8004b4" testName="DonationCategoryRules_Disallowed_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001577" startTime="2025-11-03T20:24:48.4651997+02:00" endTime="2025-11-03T20:24:48.4655855+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1334ef9-b1a0-456a-a3eb-830c843d18f4" />
+    <UnitTestResult executionId="c13c7576-a1f2-47da-90cd-6483c176f187" testId="34116a23-5443-74ae-21ff-c8e18f84d65f" testName="DonationSummaryService_EmptyInput_ReturnsEmpty" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0004270" startTime="2025-11-03T20:24:48.4801141+02:00" endTime="2025-11-03T20:24:48.4808310+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c13c7576-a1f2-47da-90cd-6483c176f187" />
+    <UnitTestResult executionId="8bfb7ca5-6130-45fb-a37f-ba5fa7bd7263" testId="aa7d1d09-ea76-3058-e2ce-581fcd3364b7" testName="LoginValidator_EmptyPassword_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001806" startTime="2025-11-03T20:24:48.4613113+02:00" endTime="2025-11-03T20:24:48.4618155+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bfb7ca5-6130-45fb-a37f-ba5fa7bd7263" />
+    <UnitTestResult executionId="40129226-613b-4d27-9e2d-38b8a9b76ef2" testId="3874702b-efea-c766-ea52-45ef2996249a" testName="LoginValidator_Valid_ReturnsTrue" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0002745" startTime="2025-11-03T20:24:48.4532492+02:00" endTime="2025-11-03T20:24:48.4537143+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40129226-613b-4d27-9e2d-38b8a9b76ef2" />
+    <UnitTestResult executionId="415b537e-63c7-4ca6-9698-295357b36fb9" testId="8a5f720c-f0be-d340-597f-99fc091799a8" testName="DonationsControllerLite_MarkDistributed_NotFound" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0002155" startTime="2025-11-03T20:24:48.4864583+02:00" endTime="2025-11-03T20:24:48.4894812+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="415b537e-63c7-4ca6-9698-295357b36fb9" />
+    <UnitTestResult executionId="894b9128-dcff-43e7-ae47-47d9abd57f0c" testId="de91baf0-3f4d-1c05-90d9-c51062c3d1a4" testName="LoginValidator_ShortPassword_ReturnsFalse" computerName="LAPTOP-NLHHVF6D" duration="00:00:00.0001294" startTime="2025-11-03T20:24:48.4619152+02:00" endTime="2025-11-03T20:24:48.4622242+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="894b9128-dcff-43e7-ae47-47d9abd57f0c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DonationStatusRules_ValidTransition_ReturnsTrue" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="90b5d8b9-9f57-1237-39fb-9c6a65b9a741">
+      <Execution id="f14893e0-3244-469f-acd7-814b1e42c4e9" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationStatusRules_ValidTransition_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="DonationSummaryService_Aggregation_Works" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="abf45545-7a9b-4ea0-6346-9c3a13965d6e">
+      <Execution id="14dd1893-56f2-4e7f-a8f8-70552c2fdd69" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationSummaryService_Aggregation_Works" />
+    </UnitTest>
+    <UnitTest name="DonationCategoryRules_CaseInsensitive_ReturnsTrue" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="e1595e0a-f62d-9e41-22f6-25d219aa22bc">
+      <Execution id="d46c9138-f239-46d8-80a1-bc74d0998562" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationCategoryRules_CaseInsensitive_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="DonationValidator_InvalidQuantity_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="d936a1ba-5bdc-4d5b-eb67-5d11f1712384">
+      <Execution id="010fc5cc-5cc8-402b-86cb-e2933a78e2b7" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationValidator_InvalidQuantity_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="DonationsControllerLite_MarkDistributed_NotFound" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="8a5f720c-f0be-d340-597f-99fc091799a8">
+      <Execution id="415b537e-63c7-4ca6-9698-295357b36fb9" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationsControllerLite_MarkDistributed_NotFound" />
+    </UnitTest>
+    <UnitTest name="MarkDistributed_ExistingDonation_UpdatesStatusAndRedirectsToManage" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="bb38eaff-449f-0e02-a226-2e5bd57d6f05">
+      <Execution id="56c342a2-371c-4f19-ab5c-084056b64d3a" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.DonationsControllerLiteIntegrationTests" name="MarkDistributed_ExistingDonation_UpdatesStatusAndRedirectsToManage" />
+    </UnitTest>
+    <UnitTest name="LoginValidator_EmptyUsername_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="cb56a343-195b-c3c2-f09f-c2696ab44bc9">
+      <Execution id="914a7b72-4c27-4311-8983-fbcc94f51dbc" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="LoginValidator_EmptyUsername_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="DonationCategoryRules_Disallowed_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="fd69289c-59b8-2113-5fff-22815c8004b4">
+      <Execution id="c1334ef9-b1a0-456a-a3eb-830c843d18f4" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationCategoryRules_Disallowed_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="LoginValidator_ShortPassword_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="de91baf0-3f4d-1c05-90d9-c51062c3d1a4">
+      <Execution id="894b9128-dcff-43e7-ae47-47d9abd57f0c" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="LoginValidator_ShortPassword_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="Create_ValidDonation_SavesAndRedirectsToIndex" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="03312a94-4003-4da9-a740-cfb6786eeb04">
+      <Execution id="0ebe9e66-19ee-4234-b27d-6d1c59883af6" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.DonationsControllerLiteIntegrationTests" name="Create_ValidDonation_SavesAndRedirectsToIndex" />
+    </UnitTest>
+    <UnitTest name="DonationStatusRules_InvalidTransition_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="4bc2ef3c-5cd4-bfee-d01c-b2c128a92786">
+      <Execution id="d8092a75-87bd-475a-ad22-a14e1b2f5f33" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationStatusRules_InvalidTransition_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="DonationStatusRules_InitialStatus_IsPending" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="270257ec-1d71-05ac-d2d6-f9112a731eec">
+      <Execution id="9f31a45c-0ef6-4fba-9447-1390fcf8d674" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationStatusRules_InitialStatus_IsPending" />
+    </UnitTest>
+    <UnitTest name="DonationValidator_EmptyCategory_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="16d3f497-8396-ff55-484d-086cce706075">
+      <Execution id="86b58dc8-8da2-4ee9-a0ab-b44f9b16ff68" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationValidator_EmptyCategory_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="DonationsControllerLite_Create_Invalid_ReturnsView" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="da62925a-ed8c-8794-3a15-773fae7522f4">
+      <Execution id="93a58518-8fea-4e7f-960f-90be7b3fb579" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationsControllerLite_Create_Invalid_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="DonationsControllerLite_MarkDistributed_Success" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="e9c34923-6a60-492a-53e5-43b3038c8a72">
+      <Execution id="f889fe0a-98f8-4bdf-9ac6-f971ef33eda0" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationsControllerLite_MarkDistributed_Success" />
+    </UnitTest>
+    <UnitTest name="Create_InvalidDonation_DoesNotSaveAndReturnsView" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="017c0b3b-67bf-66a1-3ad8-fdb052185acf">
+      <Execution id="67a631b4-c938-4bd3-9c9f-5230f038d366" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.DonationsControllerLiteIntegrationTests" name="Create_InvalidDonation_DoesNotSaveAndReturnsView" />
+    </UnitTest>
+    <UnitTest name="DonationValidator_ValidDonation_ReturnsTrue" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="80fdabc2-4ec2-3dd3-350e-993f89b3f584">
+      <Execution id="053764be-4c71-4996-bbbb-808acfd4a733" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationValidator_ValidDonation_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="MarkDistributed_NonExistingDonation_ReturnsNotFound" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="e4695502-d030-c293-fd99-434ccce0a1e8">
+      <Execution id="6f2f1494-f514-42a9-b131-4a5db15f0f47" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.DonationsControllerLiteIntegrationTests" name="MarkDistributed_NonExistingDonation_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="DonationsControllerLite_Create_Valid_RedirectsAndPersists" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="ff52aa98-a51b-49f6-478b-cda01144fd4d">
+      <Execution id="85c01784-1fa5-4ac8-ad4c-f220e000d682" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationsControllerLite_Create_Valid_RedirectsAndPersists" />
+    </UnitTest>
+    <UnitTest name="DonationSummaryService_EmptyInput_ReturnsEmpty" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="34116a23-5443-74ae-21ff-c8e18f84d65f">
+      <Execution id="c13c7576-a1f2-47da-90cd-6483c176f187" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationSummaryService_EmptyInput_ReturnsEmpty" />
+    </UnitTest>
+    <UnitTest name="LoginValidator_EmptyPassword_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="aa7d1d09-ea76-3058-e2ce-581fcd3364b7">
+      <Execution id="8bfb7ca5-6130-45fb-a37f-ba5fa7bd7263" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="LoginValidator_EmptyPassword_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="LoginValidator_Valid_ReturnsTrue" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="3874702b-efea-c766-ea52-45ef2996249a">
+      <Execution id="40129226-613b-4d27-9e2d-38b8a9b76ef2" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="LoginValidator_Valid_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="DonationValidator_InvalidEmail_ReturnsFalse" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="21dba62d-521b-a3a4-9834-279f732e4a6b">
+      <Execution id="410278fa-376d-4d61-ae4d-9f8811f8ecce" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationValidator_InvalidEmail_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="DonationCategoryRules_Allowed_ReturnsTrue" storage="c:\users\user\source\repos\disasteralleviationapp\bin\debug\net8.0\disasteralleviationapp.dll" id="7d3be0d8-a8f3-2d70-54c3-928fca788f2f">
+      <Execution id="0a1070cc-7fd5-4903-b432-8c5b86bf11d3" />
+      <TestMethod codeBase="C:\Users\User\source\repos\DisasterAlleviationApp\bin\Debug\net8.0\DisasterAlleviationApp.dll" adapterTypeName="executor://mstestadapter/v2" className="DisasterAlleviationApp.Tests.FullTestSuite" name="DonationCategoryRules_Allowed_ReturnsTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="abf45545-7a9b-4ea0-6346-9c3a13965d6e" executionId="14dd1893-56f2-4e7f-a8f8-70552c2fdd69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d3be0d8-a8f3-2d70-54c3-928fca788f2f" executionId="0a1070cc-7fd5-4903-b432-8c5b86bf11d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16d3f497-8396-ff55-484d-086cce706075" executionId="86b58dc8-8da2-4ee9-a0ab-b44f9b16ff68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03312a94-4003-4da9-a740-cfb6786eeb04" executionId="0ebe9e66-19ee-4234-b27d-6d1c59883af6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80fdabc2-4ec2-3dd3-350e-993f89b3f584" executionId="053764be-4c71-4996-bbbb-808acfd4a733" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4695502-d030-c293-fd99-434ccce0a1e8" executionId="6f2f1494-f514-42a9-b131-4a5db15f0f47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da62925a-ed8c-8794-3a15-773fae7522f4" executionId="93a58518-8fea-4e7f-960f-90be7b3fb579" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9c34923-6a60-492a-53e5-43b3038c8a72" executionId="f889fe0a-98f8-4bdf-9ac6-f971ef33eda0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb38eaff-449f-0e02-a226-2e5bd57d6f05" executionId="56c342a2-371c-4f19-ab5c-084056b64d3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb56a343-195b-c3c2-f09f-c2696ab44bc9" executionId="914a7b72-4c27-4311-8983-fbcc94f51dbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff52aa98-a51b-49f6-478b-cda01144fd4d" executionId="85c01784-1fa5-4ac8-ad4c-f220e000d682" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90b5d8b9-9f57-1237-39fb-9c6a65b9a741" executionId="f14893e0-3244-469f-acd7-814b1e42c4e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="270257ec-1d71-05ac-d2d6-f9112a731eec" executionId="9f31a45c-0ef6-4fba-9447-1390fcf8d674" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4bc2ef3c-5cd4-bfee-d01c-b2c128a92786" executionId="d8092a75-87bd-475a-ad22-a14e1b2f5f33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d936a1ba-5bdc-4d5b-eb67-5d11f1712384" executionId="010fc5cc-5cc8-402b-86cb-e2933a78e2b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="017c0b3b-67bf-66a1-3ad8-fdb052185acf" executionId="67a631b4-c938-4bd3-9c9f-5230f038d366" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21dba62d-521b-a3a4-9834-279f732e4a6b" executionId="410278fa-376d-4d61-ae4d-9f8811f8ecce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1595e0a-f62d-9e41-22f6-25d219aa22bc" executionId="d46c9138-f239-46d8-80a1-bc74d0998562" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd69289c-59b8-2113-5fff-22815c8004b4" executionId="c1334ef9-b1a0-456a-a3eb-830c843d18f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34116a23-5443-74ae-21ff-c8e18f84d65f" executionId="c13c7576-a1f2-47da-90cd-6483c176f187" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa7d1d09-ea76-3058-e2ce-581fcd3364b7" executionId="8bfb7ca5-6130-45fb-a37f-ba5fa7bd7263" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3874702b-efea-c766-ea52-45ef2996249a" executionId="40129226-613b-4d27-9e2d-38b8a9b76ef2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a5f720c-f0be-d340-597f-99fc091799a8" executionId="415b537e-63c7-4ca6-9698-295357b36fb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de91baf0-3f4d-1c05-90d9-c51062c3d1a4" executionId="894b9128-dcff-43e7-ae47-47d9abd57f0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="24" executed="24" passed="24" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

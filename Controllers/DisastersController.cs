@@ -1,0 +1,50 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using DisasterAlleviationApp.Data;
+using DisasterAlleviationApp.Models;
+using System.Security.Claims;
+
+[Authorize]
+public class DisastersController : Controller
+{
+    private readonly ApplicationDbContext _db;
+    private readonly IWebHostEnvironment _env;
+    public DisastersController(ApplicationDbContext db, IWebHostEnvironment env) { _db = db; _env = env; }
+
+    [AllowAnonymous]
+    public async Task<IActionResult> Index(string? location, string? severity)
+    {
+        var q = _db.Disasters.AsQueryable();
+        if (!string.IsNullOrWhiteSpace(location)) q = q.Where(d => d.Location.Contains(location));
+        if (!string.IsNullOrWhiteSpace(severity)) q = q.Where(d => d.Severity == severity);
+        var list = await q.OrderByDescending(d => d.OccurredAt).ToListAsync();
+        return View(list);
+    }
+
+    public IActionResult Report() => View(new Disaster { OccurredAt = DateTime.UtcNow });
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Report(Disaster model, IFormFile? evidence)
+    {
+        if (!ModelState.IsValid) return View(model);
+        model.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (model.OccurredAt == default) model.OccurredAt = DateTime.UtcNow;
+
+        if (evidence != null && evidence.Length > 0)
+        {
+            var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(evidence.FileName)}";
+            var path = Path.Combine(_env.WebRootPath, "uploads", fileName);
+            Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+            using var fs = new FileStream(path, FileMode.Create);
+            await evidence.CopyToAsync(fs);
+            model.EvidencePath = $"/uploads/{fileName}";
+        }
+
+        _db.Add(model);
+        await _db.SaveChangesAsync();
+        TempData["ok"] = "Incident submitted.";
+        return RedirectToAction(nameof(Index));
+    }
+}

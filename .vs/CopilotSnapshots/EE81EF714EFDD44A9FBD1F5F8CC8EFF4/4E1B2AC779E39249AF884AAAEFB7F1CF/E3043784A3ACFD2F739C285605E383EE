@@ -1,0 +1,15 @@
+﻿using System.Linq;
+
+namespace DisasterAlleviationApp.Services
+{
+    public static class DonationCategoryRules
+    {
+        private static readonly string[] _allowed = new[] { "Food", "Clothing", "Clothes", "Medical", "Money" };
+
+        public static bool IsAllowed(string? category)
+        {
+            if (string.IsNullOrWhiteSpace(category)) return false;
+            return _allowed.Any(a => string.Equals(a, category, System.StringComparison.OrdinalIgnoreCase));
+        }
+    }
+}

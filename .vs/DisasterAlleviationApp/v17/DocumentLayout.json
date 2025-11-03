@@ -1,0 +1,827 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\seleniumuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\seleniumuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\disasteralleviationapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:disasteralleviationapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\disasteralleviationapp.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\disasteralleviationapp.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\donationcategoryrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\donationcategoryrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\donationscontrollerlitetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\donationscontrollerlitetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\volunteer\\assigntask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\volunteer\\assigntask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\models\\taskassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:models\\taskassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\volunteer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\volunteer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\volunteer\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\volunteer\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\models\\donations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:models\\donations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\controllers\\disasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:controllers\\disasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\controllers\\volunteerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:controllers\\volunteerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\models\\disaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:models\\disaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\donations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\donations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\donations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\donations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\disasters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\disasters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\disasters\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\disasters\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\migrations\\20251103112519_initazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:migrations\\20251103112519_initazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\disasteralleviationapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:disasteralleviationapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\migrations\\20251029001938_initidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:migrations\\20251029001938_initidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\migrations\\20251103120100_cleaninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:migrations\\20251103120100_cleaninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\migrations\\20251103113740_initazure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:migrations\\20251103113740_initazure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\donationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\donationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\donationvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\donationvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\disasteralleviationapp.tests.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\disasteralleviationapp.tests.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\controllers\\donationscontrollerlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:controllers\\donationscontrollerlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\donationstatusrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\donationstatusrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\services\\donationsummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:services\\donationsummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\fulltestsuite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\fulltestsuite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\fakedonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\fakedonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|c:\\users\\user\\source\\repos\\disasteralleviationapp\\tests\\donationscontrollerliteintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1062A9DF-2587-48A6-AF11-2F2FB43B1C59}|DisasterAlleviationApp.csproj|solutionrelative:tests\\donationscontrollerliteintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DisasterAlleviationApp.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DisasterAlleviationApp.Tests.csproj",
+              "RelativeDocumentMoniker": "Tests\\DisasterAlleviationApp.Tests.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DisasterAlleviationApp.Tests.csproj",
+              "RelativeToolTip": "Tests\\DisasterAlleviationApp.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-03T17:20:31.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeleniumUITests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\SeleniumUITests.cs",
+              "RelativeDocumentMoniker": "Tests\\SeleniumUITests.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\SeleniumUITests.cs",
+              "RelativeToolTip": "Tests\\SeleniumUITests.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAJAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T18:49:56.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DisasterAlleviationApp.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\DisasterAlleviationApp.csproj",
+              "RelativeDocumentMoniker": "DisasterAlleviationApp.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\DisasterAlleviationApp.csproj",
+              "RelativeToolTip": "DisasterAlleviationApp.csproj",
+              "ViewState": "AgIAACEAAAAAAAAAAAAewC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-28T23:47:38.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DonationCategoryRules.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationCategoryRules.cs",
+              "RelativeDocumentMoniker": "Services\\DonationCategoryRules.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationCategoryRules.cs",
+              "RelativeToolTip": "Services\\DonationCategoryRules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:30:25.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DonationsControllerLiteIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationsControllerLiteIntegrationTests.cs",
+              "RelativeDocumentMoniker": "Tests\\DonationsControllerLiteIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationsControllerLiteIntegrationTests.cs",
+              "RelativeToolTip": "Tests\\DonationsControllerLiteIntegrationTests.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAEBVwKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T18:16:28.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FullTestSuite.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\FullTestSuite.cs",
+              "RelativeDocumentMoniker": "Tests\\FullTestSuite.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\FullTestSuite.cs",
+              "RelativeToolTip": "Tests\\FullTestSuite.cs",
+              "ViewState": "AgIAACYBAAAAAAAAAABBwCcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:31:11.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FakeDonationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\FakeDonationRepository.cs",
+              "RelativeDocumentMoniker": "Tests\\FakeDonationRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\FakeDonationRepository.cs",
+              "RelativeToolTip": "Tests\\FakeDonationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:37:47.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DonationStatusRules.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationStatusRules.cs",
+              "RelativeDocumentMoniker": "Services\\DonationStatusRules.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationStatusRules.cs",
+              "RelativeToolTip": "Services\\DonationStatusRules.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAABRwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:30:18.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoginValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\LoginValidator.cs",
+              "RelativeDocumentMoniker": "Services\\LoginValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\LoginValidator.cs",
+              "RelativeToolTip": "Services\\LoginValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:30:10.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonationsControllerLiteTests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationsControllerLiteTests.cs",
+              "RelativeDocumentMoniker": "Tests\\DonationsControllerLiteTests.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationsControllerLiteTests.cs",
+              "RelativeToolTip": "Tests\\DonationsControllerLiteTests.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAD4vwgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:20:33.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DonationSummaryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationSummaryService.cs",
+              "RelativeDocumentMoniker": "Services\\DonationSummaryService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationSummaryService.cs",
+              "RelativeToolTip": "Services\\DonationSummaryService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAABRwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:30:32.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DonationsControllerLite.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DonationsControllerLite.cs",
+              "RelativeDocumentMoniker": "Controllers\\DonationsControllerLite.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DonationsControllerLite.cs",
+              "RelativeToolTip": "Controllers\\DonationsControllerLite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:19:32.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IDonationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\IDonationRepository.cs",
+              "RelativeDocumentMoniker": "Services\\IDonationRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\IDonationRepository.cs",
+              "RelativeToolTip": "Services\\IDonationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:18:36.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DonationValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationValidator.cs",
+              "RelativeDocumentMoniker": "Services\\DonationValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\DonationValidator.cs",
+              "RelativeToolTip": "Services\\DonationValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T16:43:50.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T23:24:24.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DonationValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationValidatorTests.cs",
+              "RelativeDocumentMoniker": "Tests\\DonationValidatorTests.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DonationValidatorTests.cs",
+              "RelativeToolTip": "Tests\\DonationValidatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T16:44:02.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DisasterAlleviationApp.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DisasterAlleviationApp.Tests.csproj",
+              "RelativeDocumentMoniker": "Tests\\DisasterAlleviationApp.Tests.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Tests\\DisasterAlleviationApp.Tests.csproj",
+              "RelativeToolTip": "Tests\\DisasterAlleviationApp.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-03T16:45:48.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T23:23:22.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssignTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\AssignTask.cshtml",
+              "RelativeDocumentMoniker": "Views\\Volunteer\\AssignTask.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\AssignTask.cshtml",
+              "RelativeToolTip": "Views\\Volunteer\\AssignTask.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T09:32:05.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Donations.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Donations.cs",
+              "RelativeDocumentMoniker": "Models\\Donations.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Donations.cs",
+              "RelativeToolTip": "Models\\Donations.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:09:41.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TaskAssignment.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\TaskAssignment.cs",
+              "RelativeDocumentMoniker": "Models\\TaskAssignment.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\TaskAssignment.cs",
+              "RelativeToolTip": "Models\\TaskAssignment.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAApwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:11:00.401Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T00:05:20.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T18:23:23.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T15:21:35.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DonationsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DonationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DonationsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DonationsController.cs",
+              "RelativeToolTip": "Controllers\\DonationsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:12:48.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Volunteer\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\Register.cshtml",
+              "RelativeToolTip": "Views\\Volunteer\\Register.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAewAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T09:31:13.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Volunteer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Volunteer\\Index.cshtml",
+              "RelativeToolTip": "Views\\Volunteer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T09:30:15.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DisastersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DisastersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DisastersController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\DisastersController.cs",
+              "RelativeToolTip": "Controllers\\DisastersController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAD4vzIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T06:39:20.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VolunteersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\VolunteersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VolunteersController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\VolunteersController.cs",
+              "RelativeToolTip": "Controllers\\VolunteersController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAtwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:13:37.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\AuditLog.cs",
+              "RelativeDocumentMoniker": "Models\\AuditLog.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\AuditLog.cs",
+              "RelativeToolTip": "Models\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:00:12.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Volunteer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Volunteer.cs",
+              "RelativeDocumentMoniker": "Models\\Volunteer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Volunteer.cs",
+              "RelativeToolTip": "Models\\Volunteer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAApwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:10:15.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Disaster.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Disaster.cs",
+              "RelativeDocumentMoniker": "Models\\Disaster.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Models\\Disaster.cs",
+              "RelativeToolTip": "Models\\Disaster.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA9wCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T06:37:54.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-02T17:41:41.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Disasters\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Disasters\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Disasters\\Index.cshtml",
+              "RelativeToolTip": "Views\\Disasters\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T17:23:25.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T00:36:09.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Donations\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Donations\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Donations\\Create.cshtml",
+              "RelativeToolTip": "Views\\Donations\\Create.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAIBJwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T09:28:51.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Report.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Disasters\\Report.cshtml",
+              "RelativeDocumentMoniker": "Views\\Disasters\\Report.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Disasters\\Report.cshtml",
+              "RelativeToolTip": "Views\\Disasters\\Report.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAIBJwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T17:23:53.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T17:49:16.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Donations\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Donations\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Donations\\Index.cshtml",
+              "RelativeToolTip": "Views\\Donations\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T09:27:39.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20251103120100_CleanInit.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103120100_CleanInit.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251103120100_CleanInit.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103120100_CleanInit.cs",
+              "RelativeToolTip": "Migrations\\20251103120100_CleanInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T12:01:00.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T17:48:21.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20251103112519_InitAzure.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103112519_InitAzure.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251103112519_InitAzure.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103112519_InitAzure.cs",
+              "RelativeToolTip": "Migrations\\20251103112519_InitAzure.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T11:25:20.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20251103113740_InitAzure2.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103113740_InitAzure2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251103113740_InitAzure2.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251103113740_InitAzure2.cs",
+              "RelativeToolTip": "Migrations\\20251103113740_InitAzure2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T11:37:42.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T17:49:38.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:50:03.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DisasterAlleviationApp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\DisasterAlleviationApp.csproj",
+              "RelativeDocumentMoniker": "DisasterAlleviationApp.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\DisasterAlleviationApp.csproj",
+              "RelativeToolTip": "DisasterAlleviationApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-02T19:56:31.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAABRwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T00:11:21.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20251029001938_InitIdentity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251029001938_InitIdentity.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251029001938_InitIdentity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\Migrations\\20251029001938_InitIdentity.cs",
+              "RelativeToolTip": "Migrations\\20251029001938_InitIdentity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T00:19:39.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DisasterAlleviationApp\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-28T23:59:16.995Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

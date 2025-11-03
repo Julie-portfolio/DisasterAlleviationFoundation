@@ -1,0 +1,36 @@
+﻿@model DisasterAlleviationApp.Models.Donation
+@{
+    ViewData["Title"] = "Submit Donation";
+}
+<h2>Submit Donation</h2>
+<form asp-action="Create" method="post" class="row g-3">
+    @Html.AntiForgeryToken()
+    <div class="col-md-6">
+        <label class="form-label">Category</label>
+        <select asp-for="Category" class="form-select">
+            <option>Food</option>
+            <option>Clothing</option>
+            <option>Medical</option>
+            <option>Money</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Quantity</label>
+        <input asp-for="Quantity" type="number" min="1" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Donor Name</label>
+        <input asp-for="DonorName" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Donor Email</label>
+        <input asp-for="DonorEmail" type="email" class="form-control" />
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary">Submit</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

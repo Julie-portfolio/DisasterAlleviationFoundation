@@ -1,0 +1,11 @@
+﻿public class Disaster
+{
+    public int Id { get; set; }
+    public string Title { get; set; } = "";
+    public string Description { get; set; } = "";
+    public string Location { get; set; } = "";
+    public DateTime OccurredAt { get; set; }
+    public string Severity { get; set; } = ""; // Low, Medium, High, Critical
+    public string? EvidencePath { get; set; }
+    public string? UserId { get; set; } // IdentityUser Id
+}
